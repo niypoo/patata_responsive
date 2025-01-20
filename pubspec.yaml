@@ -1,7 +1,7 @@
 name: patata_responsive
 description: "A package that provides scalable pixel units that scale with the device's screen size."
 version: 0.0.1
-homepage:
+homepage: https://github.com/niypoo/patata_responsive
 
 environment:
   sdk: ^3.5.0
