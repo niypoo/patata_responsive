@@ -1,0 +1,17 @@
+name: patata_responsive
+description: "A package that provides scalable pixel units that scale with the device's screen size."
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ^3.5.0
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
