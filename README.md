@@ -1,39 +1,40 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+#Patata Responsive
+A package that provides scalable pixel units that scale with the device's screen size without BuildContext or any integrations.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
 
 ## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Patata Responsive will help you to crate a responsive [UI and Text] that work on any device size.
 
 ## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Patata Responsive is extention that work on any ```num``` object in dart so all you need add ```.``` at end of each num and you abil to access on (Scalable Pixel).
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+Returns a scalable pixel value.
+```
+Text('Hello World!', style: TextStyle(fontSize: 10.sp),)
 ```
 
-## Additional information
+Returns a scalable pixel value, This is useful in cas you split screen in landscape mode.
+```
+Text('Hello World!', style: TextStyle(fontSize: 10.sph),)
+```
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Width in pixels calculated as a percentage of the screen's width. (ex: 50.w return 50% of the screen's width)
+```
+Container(
+      width: 40.w,
+      color: Colors.blue,
+      child: Text('Hello World!', style: TextStyle(fontSize: 10.sp),)
+);
+```
+
+Height in pixels calculated as a percentage of the screen's height. (ex: 50.h return 50% of the screen's height)
+```
+Container(
+      height: 40.h,
+      color: Colors.blue,
+      child: Text('Hello World!', style: TextStyle(fontSize: 10.sp),)
+);
+```
